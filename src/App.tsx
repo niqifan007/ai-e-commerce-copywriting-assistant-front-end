@@ -17,9 +17,9 @@ export default function App() {
         
         <Tabs defaultValue="common" className="space-y-8">
           <TabsList className="justify-start flex-wrap">
-            <TabsTrigger value="common">主页</TabsTrigger>
-            <TabsTrigger value="product">商品</TabsTrigger>
-            <TabsTrigger value="marketing">营销</TabsTrigger>
+            <TabsTrigger value="common">商品</TabsTrigger>
+            <TabsTrigger value="product">营销</TabsTrigger>
+            <TabsTrigger value="marketing">客服</TabsTrigger>
             <TabsTrigger value="advertising">广告</TabsTrigger>
             <TabsTrigger value="communication">沟通</TabsTrigger>
             <TabsTrigger value="other">其他</TabsTrigger>

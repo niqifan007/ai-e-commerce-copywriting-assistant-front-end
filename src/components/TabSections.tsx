@@ -16,26 +16,82 @@ import {
   Target,
   MessageCircle,
   MoreHorizontal,
+  Bookmark,
+  Activity,
+  ListCheck,
+  Pen,
+  Box,
+
 } from 'lucide-react';
 import { FeatureCard } from './FeatureCard';
 
 export function CommonFeatures() {
   return (
     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-      <FeatureCard
+      <FeatureCard 
         icon={FileText}
         title="商品描述生成"
-        description="智能生成吸引人的商品描述文案"
+        description="生成高质量产品详细描述,高埋词率,吸引客户兴趣。"
       />
       <FeatureCard
         icon={Tags}
-        title="标题优化"
-        description="优化商品标题以提高点击率"
+        title="标题优化" 
+        description="优化Listing标题,增强搜索引擎友好度。"
       />
       <FeatureCard
         icon={Search}
-        title="关键词建议"
-        description="获取相关搜索关键词建议"
+        title="关键词提取"
+        description="从文本中提取有效关键词,提升搜索效果。"
+      />
+      <FeatureCard
+        icon={Bookmark}
+        title="标签提取"
+        description="从Listing中提取高效标签,助力营销。"
+      />
+      <FeatureCard
+        icon={Activity}
+        title="标签生成"
+        description="自动生成品牌增亮标签,提高产品曝光。" 
+      />
+      <FeatureCard
+        icon={Settings}
+        title="关键词优化"
+        description="优化相关关键词,提高搜索转化率。"
+      />
+      <FeatureCard
+        icon={ListCheck}
+        title="Listing优化"
+        description="整体优化Listing,提升排名,增加好评。"
+      />
+      <FeatureCard
+        icon={Pen}
+        title="Listing对比"
+        description="对比不同Listing,找出优缺点提升策略。"
+      />
+      <FeatureCard
+        icon={Box}
+        title="商品描述优化"
+        description="优化产品描述,输出符合期望的描述。"
+      />
+      <FeatureCard
+        icon={FileText}
+        title="Listing生成"
+        description="快速生成高质量的Listing,提升上架效率。"
+      />
+      <FeatureCard
+        icon={Search}
+        title="关键词生成"
+        description="根据产品信息生成合适的关键词"
+      />
+      <FeatureCard
+        icon={FileText}
+        title="搜索词生成"
+        description="智能生成后台搜索关键词，提升搜索曝光。"
+      />
+      <FeatureCard
+        icon={Search}
+        title="关键词扩展"
+        description="扩展相关关键词，覆盖更多流量。"
       />
     </div>
   );
