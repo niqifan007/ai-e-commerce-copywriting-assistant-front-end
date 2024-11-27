@@ -1,7 +1,4 @@
 import {
-  BarChart3,
-  ShoppingBag,
-  Megaphone,
   MessageSquare,
   Settings,
   Presentation, // Changed from PresentationScreen to Presentation
@@ -11,7 +8,6 @@ import {
   Share2,
   FileText,
   Search,
-  Package,
   TrendingUp,
   Target,
   MessageCircle,
@@ -22,6 +18,8 @@ import {
   Pen,
   Box,
   Languages,
+  ThumbsDown,
+  BarChart2
 
 } from 'lucide-react';
 import { FeatureCard } from './FeatureCard';
@@ -109,19 +107,24 @@ export function ProductFeatures() {
   return (
     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
       <FeatureCard
-        icon={Package}
-        title="产品特点提取"
-        description="自动提取并突出产品核心特点"
+        icon={Users}
+        title="用户画像分析"
+        description="基于数据分析用户画像，精准定位客户。"
       />
       <FeatureCard
-        icon={ShoppingBag}
-        title="产品卖点分析"
-        description="分析并强化产品主要卖点"
+        icon={FileText}
+        title="Listing分析"
+        description="深入分析Listing表现，发现优化空间。"
       />
       <FeatureCard
-        icon={BarChart3}
-        title="竞品分析"
-        description="智能分析竞争产品优势"
+        icon={Search}
+        title="关键词推荐"
+        description="智能推荐高效关键词，增加流量。"
+      />
+      <FeatureCard
+        icon={TrendingUp}
+        title="改款分析建议"
+        description="提供产品改款分析建议，优化产品线。"
       />
     </div>
   );
@@ -131,19 +134,34 @@ export function MarketingFeatures() {
   return (
     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
       <FeatureCard
-        icon={TrendingUp}
-        title="营销策略"
-        description="制定个性化营销策略建议"
+        icon={MessageCircle}
+        title="买家消息回复生成"
+        description="快速生成买家消息回复，提升响应速度。"
       />
       <FeatureCard
-        icon={Presentation}
-        title="活动文案"
-        description="生成促销活动主题文案"
+        icon={ThumbsDown}
+        title="差评回复生成"
+        description="生成差评回复，妥善处理客户问题。"
       />
       <FeatureCard
-        icon={Share2}
-        title="社媒营销"
-        description="创建社交媒体营销内容"
+        icon={MessageSquare}
+        title="评论回复生成"
+        description="为客户评论生成合适的回复，提高互动性。"
+      />
+      <FeatureCard
+        icon={Mail}
+        title="售后邮件回复生成"
+        description="生成售后邮件回复，提高客户满意度。"
+      />
+      <FeatureCard
+        icon={Mail}
+        title="邮件回复生成"
+        description="自动生成邮件回复，提升售后服务效率。"
+      />
+      <FeatureCard
+        icon={BarChart2}
+        title="客户评论分析"
+        description="分析客户评论，洞察用户需求。"
       />
     </div>
   );
@@ -154,18 +172,28 @@ export function AdvertisingFeatures() {
     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
       <FeatureCard
         icon={Target}
-        title="广告文案"
-        description="生成针对性广告推广文案"
+        title="推广建议"
+        description="提供有效的推广建议，提高营销效果。"
       />
       <FeatureCard
-        icon={Megaphone}
-        title="推广方案"
-        description="制定全方位推广投放方案"
+        icon={TrendingUp}
+        title="流行词推荐"
+        description="推荐当前流行词汇，紧跟趋势。"
       />
       <FeatureCard
-        icon={Users}
-        title="受众分析"
-        description="分析目标用户群体特征"
+        icon={Share2}
+        title="Post生成"
+        description="快速生成社交媒体Post，提升品牌曝光。"
+      />
+      <FeatureCard
+        icon={MessageSquare}
+        title="评论生成"
+        description="自动生成客户评论，增加社交信任。"
+      />
+      <FeatureCard
+        icon={Presentation}
+        title="广告标题生成"
+        description="生成吸引眼球的广告标题，提升点击率。"
       />
     </div>
   );
@@ -176,23 +204,33 @@ export function CommunicationFeatures() {
     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
       <FeatureCard
         icon={MessageCircle}
-        title="客服话术"
-        description="生成专业客服应答话术"
+        title="商品介绍生成"
+        description="生成详细商品介绍，提升用户转化。"
       />
       <FeatureCard
         icon={Mail}
-        title="邮件模板"
-        description="创建营销邮件模板内容"
+        title="外贸开发信生成"
+        description="生成外贸开发信，开拓更多市场。"
       />
       <FeatureCard
         icon={MessageSquare}
-        title="评价回复"
-        description="智能生成评价回复内容"
+        title="Case Study生成"
+        description="自动生成案例研究，展示产品优势。"
       />
       <FeatureCard
         icon={MessageSquare}
-        title="邀约信件撰写"
-        description="生成KOL邀约信件"
+        title="营销邮件生成"
+        description="生成精准营销邮件，助力促销活动。"
+      />
+      <FeatureCard
+        icon={MessageSquare}
+        title="带货邀约信生成"
+        description="生成KOL带货邀约信，增加合作机会。"
+      />
+      <FeatureCard
+        icon={MessageSquare}
+        title="询价邮件生成"
+        description="自动生成询价邮件，提升沟通效率。"
       />
     </div>
   );

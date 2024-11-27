@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 lmstudio.js Code Examples - SDK (TypeScript)  LM Studio Docs.md
 aisdklm.md
+.bolt
