@@ -21,6 +21,7 @@ import {
   ListCheck,
   Pen,
   Box,
+  Languages,
 
 } from 'lucide-react';
 import { FeatureCard } from './FeatureCard';
@@ -32,6 +33,7 @@ export function CommonFeatures() {
         icon={FileText}
         title="商品描述生成"
         description="生成高质量产品详细描述,高埋词率,吸引客户兴趣。"
+        route="/features/product-description"
       />
       <FeatureCard
         icon={Tags}
@@ -92,6 +94,12 @@ export function CommonFeatures() {
         icon={Search}
         title="关键词扩展"
         description="扩展相关关键词，覆盖更多流量。"
+      />
+      <FeatureCard
+        icon={Languages}
+        title="电商专业翻译"
+        description="使用阿里国际大模型Marco-o1翻译。"
+        route="/features/translation"
       />
     </div>
   );
